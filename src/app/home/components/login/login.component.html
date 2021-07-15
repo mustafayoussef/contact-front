@@ -1,0 +1,18 @@
+<div class="data-form">
+    <form class="w-75" [formGroup]="loginForm" (ngSubmit)='login()'>
+        <div class=" inputs row my-5">
+            <div class="col-md-6 my-2">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-control" placeholder="Enter your email" formControlName="email">
+            </div>
+            <div class="col-md-6 my-2">
+                <label class="form-label">Password</label>
+                <input type="password" class="form-control" placeholder="Enter your password"
+                    formControlName="password">
+            </div>
+        </div>
+        <div class="btn-submit text-center">
+            <button type="submit" class="btn btn-outline-info">Login</button>
+        </div>
+    </form>
+</div>

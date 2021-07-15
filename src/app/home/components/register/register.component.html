@@ -1,0 +1,26 @@
+<div class="data-form">
+    <form class="w-75" [formGroup]="registerForm" (ngSubmit)='register()'>
+        <div class=" inputs row my-5">
+            <div class="col-md-6 my-2">
+                <label class="form-label">First Name</label>
+                <input type="text" class="form-control" placeholder="Enter your First Name" formControlName="firstname">
+            </div>
+            <div class="col-md-6 my-2">
+                <label class="form-label">Last Name</label>
+                <input type="text" class="form-control" placeholder="Enter your Last Name" formControlName="lastname">
+            </div>
+            <div class="col-md-6 my-2">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-control" placeholder="Enter your email" formControlName="email">
+            </div>
+            <div class="col-md-6 my-2">
+                <label class="form-label">Password</label>
+                <input type="password" class="form-control" placeholder="Enter your password"
+                    formControlName="password">
+            </div>
+        </div>
+        <div class="btn-submit text-center">
+            <button type="submit" class="btn btn-outline-info">Register</button>
+        </div>
+    </form>
+</div>
